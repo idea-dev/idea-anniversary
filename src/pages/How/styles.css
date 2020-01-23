@@ -1,0 +1,18 @@
+.how {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin: 60px;
+}
+
+.title {
+  composes: headline from global;
+
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.howStep {
+  margin: 40px 0;
+}

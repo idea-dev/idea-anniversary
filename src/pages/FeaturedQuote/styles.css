@@ -1,0 +1,53 @@
+.featuredQuote {
+  background-size: cover;
+}
+
+.tint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  height: 100%;
+
+  background-color: var(--dark-blue-tint);
+}
+
+.quote {
+  position: relative;
+  font-size: var(--typeXLarge);
+}
+
+.quote::before {
+  font-family: 'Libre';
+  content: "“";
+  color: var(--orange);
+  font-size: calc(var(--typeXLarge) * 2);
+
+  position: absolute;
+  top: -20%;
+  left: -5%;
+}
+
+.quote::after {
+  font-family: 'Libre';
+  content: "”";
+  color: var(--orange);
+  font-size: calc(var(--typeXLarge) * 2);
+
+  position: absolute;
+  right: -5%;
+  bottom: -30%;
+}
+
+.quoteSource {
+  margin-top: 40px;
+  font-size: var(--typeLarge);
+  text-align: right;
+
+  color: var(--orange);
+}
+
+.name {
+  font-weight: bold;
+}
+

@@ -1,0 +1,17 @@
+.contributors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  composes: headline from global;
+  text-align: right;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.contributorsParagraph {
+  width: 110%;
+  opacity: 0.5;
+}

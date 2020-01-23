@@ -1,0 +1,12 @@
+.keyResource {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  composes: headline from global;
+  width: 50%;
+  padding-left: 10%;
+}

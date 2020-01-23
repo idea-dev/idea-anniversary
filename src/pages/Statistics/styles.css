@@ -1,0 +1,44 @@
+.fundingStatistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  composes: headline from global;
+
+  text-align: center;
+}
+
+.statisticsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.number {
+  composes: letter-spaced from global;
+
+  color: var(--orange);
+  font-size: calc(var(--typeXLarge) + 20px);
+  font-weight: bold;
+  border-bottom: 8px solid var(--orange);
+  padding-bottom: 20px;
+
+  text-align: center;
+}
+
+.description {
+  composes: letter-spaced from global;
+
+  text-align: center;
+  font-size: var(--typeMedium);
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.statisticsBlock {
+  max-width: 300px;
+}
+

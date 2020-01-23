@@ -1,0 +1,17 @@
+.globalInfluence {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.title {
+  composes: headline from global;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+.basicCopy {
+  display: flex;
+  flex-direction: row;
+
+  &.reversed {
+    flex-direction: row-reverse;
+  }
+}
+
+
+.copy {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0 5% 0 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.reversed {
+    padding-right: 10%;
+    padding-left: 5%;
+  }
+
+}
+
+.title {
+  composes: headline from global;
+
+  position: relative;
+
+  &.left::before {
+    display: inline-block;
+    content: "";
+    border-top: 10px solid var(--orange);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: -550px;
+  }
+
+  &.right::after {
+    display: inline-block;
+    content: "";
+    border-top: 10px solid var(--orange);
+    width: 500px;
+    position: absolute;
+    bottom: 10%;
+    right: -550px;
+  }
+}
+
+.asset {
+  width: 50%;
+  margin: auto;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+

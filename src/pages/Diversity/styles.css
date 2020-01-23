@@ -1,0 +1,15 @@
+.diversity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  composes: headline from global;
+  text-align: center;
+}
+
+.asset {
+  width: 100%;
+  height: auto;
+}

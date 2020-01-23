@@ -1,0 +1,25 @@
+.dotStatistics {
+  width: 200px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.dot {
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  border: 1px solid white;
+  margin-right: 10px;
+
+  &.checked {
+    background-color: white;
+  }
+}
+
+.description {
+  composes: lora from global;
+}

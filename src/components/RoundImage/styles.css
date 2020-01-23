@@ -1,0 +1,4 @@
+.roundImage {
+  composes: shadow from global;
+  border-radius: 100%;
+}

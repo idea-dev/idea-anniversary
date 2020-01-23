@@ -1,0 +1,10 @@
+.industries {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.title {
+  composes: headline from global;
+}
+

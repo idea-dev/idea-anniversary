@@ -1,0 +1,64 @@
+.keyResourceAnimation {
+  text-align: right;
+  right: 0;
+}
+
+.plusRow {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.plus {
+  font-size: var(--typeLarge);
+  color: var(--gray);
+  margin: 10px;
+  position: relative;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.fa {
+  opacity: 1;
+}
+
+.testimonial {
+  display: none;
+
+  font-size: var(--typeMedium);
+  position: absolute;
+
+  background-color: var(--orange);
+  padding: 20px;
+  z-index: 999;
+  max-width: 200px;
+
+  text-align: left;
+
+  color: white;
+
+  &.offset {
+    right: 0;
+  }
+}
+
+.fa:hover + .testimonial {
+  display: block;
+}
+

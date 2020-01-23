@@ -1,0 +1,44 @@
+.milestonePage {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 5% 0 10%;
+}
+
+.title {
+  composes: headline from global;
+  position: relative;
+}
+
+.title::before {
+  display: inline-block;
+  content: "";
+  border-top: 10px solid var(--orange);
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: -550px;
+}
+
+.asset {
+  width: 50%;
+}
+
+.exit {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  font-size: 36px;
+  padding: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+

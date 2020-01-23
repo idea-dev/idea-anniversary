@@ -1,0 +1,42 @@
+.beforeAfter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  position: relative;
+}
+
+.title {
+  composes: headline from global;
+  margin: 50px;
+  position: relative;
+  margin-left: 150px;
+}
+
+.title::before {
+    display: inline-block;
+    content: "";
+    border-top: 10px solid var(--orange);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: -550px;
+}
+
+.exit {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  font-size: 36px;
+  padding: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+
+.compareImageContainer {
+  align-self: center;
+  margin-bottom: 40px;
+  width: calc(100% - 80px);
+}

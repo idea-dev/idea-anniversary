@@ -1,0 +1,48 @@
+.milestones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  position: sticky;
+}
+
+.title {
+  composes: headline from global;
+
+  text-align: center;
+}
+
+.milestonesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+}
+
+.milestone {
+  height: 500px;
+  width: 100%;
+
+  margin: 0 10px;
+  background-size: cover;
+}
+
+.copy {
+  height: 100%;
+  background: rgba(233, 122, 36, 0.2);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.milestoneTitle {
+  composes: letter-spaced from global;
+
+  font-size: var(--typeLarge);
+  font-weight: bold;
+
+  text-align: center;
+  margin: auto;
+}

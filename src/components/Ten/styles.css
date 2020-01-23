@@ -1,0 +1,8 @@
+.ten {
+  font-size: var(--typeHuge);
+  color: var(--orange)
+}
+
+.zero {
+  font-size: calc(var(--typeHuge) - 20px);
+}

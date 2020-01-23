@@ -1,0 +1,43 @@
+.landing {
+  background-size: cover;
+  position: relative;
+}
+
+.tint {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-blue-tint);
+}
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ten {
+  composes: center;
+  composes: josefin from global;
+
+  margin-top: 40px;
+  opacity: 0.7;
+}
+
+.title {
+  composes: center;
+  composes: headline from global;
+
+  color: white;
+}
+
+.scrollGif {
+  composes: center;
+  width: 80px;
+
+  top: auto;
+  bottom: 0;
+}

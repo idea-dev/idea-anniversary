@@ -1,0 +1,164 @@
+/* Root variables */
+:root {
+  --dark-blue: #071C27;
+  --dark-blue-tint: #071C27e0;
+  --gray: #bbbdc0;
+  --orange: #E97A24;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  :root {
+    --typeHuge: 240px;
+    --typeXLarge: 36px;
+    --typeLarge: 24px;
+    --typeMedium: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --typeHuge: 360px;
+    --typeXLarge: 48px;
+    --typeLarge: 32px;
+    --typeMedium: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  :root {
+    --typeHuge: 420px;
+    --typeXLarge: 72px;
+    --typeLarge: 36px;
+    --typeMedium: 22px;
+  }
+}
+
+html,
+body,
+body > div {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Typefaces */
+@font-face {
+  font-family: 'Libre';
+  src: url('./assets/LibreBaskerville-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Josefin';
+  src: url('./assets/JosefinSans-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Josefin';
+  src: url('./assets/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/Lato-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/Lato-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Cera';
+  src: url('./assets/Cera-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Cera';
+  src: url('./assets/Cera.otf');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/Lora-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/Lora-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/Lora-Italic.ttf');
+  font-style: italic;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  font-size: var(--typeMedium);
+  background-color: var(--dark-blue);
+  color: white;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+p {
+  line-height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+  font-weight: bold;
+}
+
+/* Global class names */
+:global .lora {
+  font-family: 'Lora';
+  font-style: italic;
+}
+
+:global .cera {
+  font-family: 'Cera';
+}
+
+:global .lato {
+  font-family: 'Lato';
+}
+
+:global .josefin {
+  font-family: 'Josefin';
+}
+
+:global .shadow {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+:global .letter-spaced {
+  letter-spacing: 0.1em;
+}
+
+:global .headline {
+  letter-spacing: 0.1em;
+  font-size: var(--typeXLarge);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}

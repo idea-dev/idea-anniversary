@@ -1,0 +1,13 @@
+.app {
+  height: 100%;
+}
+
+.overlayPage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+  background-color: var(--dark-blue);
+}
+
+
