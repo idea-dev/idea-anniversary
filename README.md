@@ -2,6 +2,7 @@
 
 IDEA's anniversary website is the only 10 year interactive journey map that integrates testimonials and data visualizations from the past, present, and future fro student leaders, potential investors, entrepreneurs, deans and influential partners in the global entreprenuer ecosystem who are curios and motivated by IDEA's mission in an era of global diversity, innovation and excellence.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad89c199-fc46-4c84-9e0c-89d9e91d59df/deploy-status)](https://app.netlify.com/sites/infallible-lamport-7aa8ff/deploys)
 ## **Getting Started**
 
 Clone the repository:
