@@ -17,6 +17,21 @@ Install the npm modules
 npm install
 ```
 
+Setting up Takeshape environment variables
+
+```bash
+#Create a .env file inside the project directory
+touch .env
+```
+
+Add the following lines to the `.env` file with you favorite command line editor(vim,nano, etc.) Please use the API key you recieved from Takeshape
+
+```sh
+DOCUMENT_TITLE="IDEA Anniversary"
+TAKESHAPE_API_KEY=SECRET_TAKESHAPE_API_KEY
+TAKESHAPE_GRAPHQL_URL=https://api.takeshape.io/project/a2597671-169d-4d16-9c56-9528619268c9/graphql
+```
+
 Run the server
 
 ```bash
@@ -41,7 +56,7 @@ Go to http://localhost:8080 to access the website.
 
 
 ## **Deployment** :raised_hands:
-The website is currently live [here](https://idea-anniversary.netlify.sh)
+The website is currently live [here](https://infallible-lamport-7aa8ff.netlify.com/)
 
 To deploy, run:
 ```sh
