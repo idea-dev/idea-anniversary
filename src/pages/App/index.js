@@ -67,7 +67,7 @@ const App = () => {
         <Mosaic />
         <Diversity />
         <Faces />
-        <Contributors />
+        {/* <Contributors /> */}
         <GetInvolved />
         <Closing />
       </div>
