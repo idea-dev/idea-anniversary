@@ -24,6 +24,7 @@ export const WHAT_QUERY = gql`
         }
         highlightFrom
         highlightTo
+        link
       }
     }
   }

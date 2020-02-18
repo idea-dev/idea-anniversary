@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { WHAT_QUERY } from '../../queries';
 
 import BasicCopy, { Image } from '../../components/BasicCopy';
+import CTA from '../../components/CTA';
 import styles from './styles.css';
 
 /**
@@ -22,9 +23,13 @@ const What = (props) => {
         asset: { sourceUrl },
         highlightTo,
         highlightFrom,
+        link,
       },
     },
   } = data;
+
+  console.log(data)
+  const cta = <CTA className={styles.link} link={link} text={'Register For 10 Year Event'} />;
 
   return (
     <BasicCopy
@@ -33,6 +38,7 @@ const What = (props) => {
       asset={<Image src={sourceUrl} />}
       highlightFrom={highlightFrom}
       highlightTo={highlightTo}
+      cta={cta}
     />
   );
 };
